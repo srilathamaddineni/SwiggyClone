@@ -38,3 +38,8 @@
     flex-wrap: wrap;
     padding:5px;
 }
+.filter-btn{
+    Margin:5px;
+    cursor: pointer;
+}
+
