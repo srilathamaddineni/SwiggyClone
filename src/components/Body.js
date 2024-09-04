@@ -26,7 +26,6 @@ const Body=()=>{
     <Shimmer />
     ):(
         <div className="body">
-            <div className="filter">
               <div className="search">
                 <input
                   type="text"
@@ -42,17 +41,17 @@ const Body=()=>{
                   }}>
                 Search
                </button>
-               
               </div>
+            <div className="filter">
+
                 <button 
                   className="filter-btn"
                   onClick={()=>{
                     const filteredList=listOfRestaurants.filter(
-                        (res)=>res.info.avgRating>4.3
+                        (res)=> res.info.avgRating > 4.4                       
                     );
-                    setlistOfRestaurants(filteredList);
-                  }}
-                  >
+                    setfilteredRestaurant(filteredList);
+                  }}>
                     Top Rated restaurants
                   </button>
             </div>
