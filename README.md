@@ -1,5 +1,5 @@
 ﻿# SwiggyClone
- Tech Stack
+ ##Tech Stack
     1.ReactJS
     2.Redux
     3.Parcek
