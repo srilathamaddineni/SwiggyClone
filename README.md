@@ -1,6 +1,7 @@
-﻿# SwiggyClone
- ##Tech Stack
-    1.ReactJS
-    2.Redux
-    3.Parcek
-    4.TailwindCSS
+## Swiggy Clone
+
+### Tech Stack
+1. React JS  
+2. Parcel  
+3. Redux  
+4. TailwindCSS  
