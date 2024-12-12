@@ -35,16 +35,16 @@ const RestaurantMenu=()=>{
     return(
         <div className="text-center">
             
-             <div class="font-bold my-6 text-2xt">{name}</div>
-             <div>cuisines:{cuisines.join(",")}</div>
+             <div class="font-bold my-6 text-9xt">{name}</div>
+             <div>Cuisines:{cuisines.join(",")}</div>
              {
                 categories.map((category,index) => (
                   
                     <RestaurantCategory 
                     key={category?.caed?.card.title}
                     data={category?.card?.card}
-                    showItems={index===showIndex?true:false}
-                    setShowIndex={()=>setShowIndex(index)} 
+                    showItems={index===showIndex}
+                    setShowIndex={() => setShowIndex(index === showIndex ? null : index)} 
                     />
 
                 ))}      

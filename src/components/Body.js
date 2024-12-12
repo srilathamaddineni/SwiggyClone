@@ -44,6 +44,7 @@ const Body=()=>{
                     const filteredRest=listOfRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchItem.toLowerCase())
                        
                     );
+                
                     setfilteredRestaurant(filteredRest);
                   }}>
                 Search
@@ -61,6 +62,16 @@ const Body=()=>{
                   }}>
                     Top Rated restaurants
                   </button>
+                  <button
+            className="px-4 py-1 bg-orange-100 mx-2 my-2 rounded"
+            onClick={() => {
+              setfilteredRestaurant(listOfRestaurants); // Reset to the original list
+              setsearchItem(""); // Clear the search input
+            }}
+          >
+            Remove Filter
+          </button>
+                  
             </div>
             </div>
             <div className="flex flex-wrap">
